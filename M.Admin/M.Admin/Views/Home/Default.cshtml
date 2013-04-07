@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "管理系统";
+    
+}
+@Scripts.Render("~/Scripts/ligerui/ligerui.all.js")
+@Scripts.Render("~/Scripts/common/indexdata.js")
+@Styles.Render("~/Content/ligerUI/skins/Aqua/css/ligerui-all.css")
+@Scripts.Render("~Scripts/common/site.js")
+<div id="pageloading"></div>  
+<div id="topmenu" class="l-topmenu">
+    <div class="l-topmenu-logo">管理系统</div>
+    <div class="l-topmenu-welcome">
+        <a href="#" class="l-link2">本地版本</a>
+        <span class="space">|</span>
+        <a href="#" class="l-link2" target="_blank">捐赠</a> 
+        <span class="space">|</span>
+        <a href="#" class="l-link2" target="_blank">退出登录</a>
+    </div> 
+</div>
+  <div id="layout1" style="width:99.2%; margin:0 auto; margin-top:4px; "> 
+        <div position="left"  title="主要菜单" id="accordion1"> 
+                     <div title="功能列表" class="l-scroll">
+                         <ul id="tree1" style="margin-top:3px;">
+                    </div>
+                  @*  <div title="应用场景">
+                    <div style=" height:7px;"></div>
+                         <a class="l-link" href="javascript:f_addTab('listpage','列表页面','demos/case/listpage.htm')">列表页面</a> 
+                         <a class="l-link" href="demos/dialog/win7.htm" target="_blank">模拟Window桌面</a> 
+                    </div>    
+                     <div title="实验室">
+                    <div style=" height:7px;"></div>
+                          <a class="l-link" href="lab/generate/index.htm" target="_blank">表格表单设计器</a> 
+                    </div> *@
+        </div>
+        <div position="center" id="framecenter"> 
+            <div tabid="home" title="我的主页" style="height:300px" >
+                <iframe frameborder="0" name="home" id="home" src="/Home/Welcome"></iframe>
+            </div> 
+        </div> 
+        
+    </div>
+    <div  style="height:32px; line-height:32px; text-align:center;">
+            Copyright © 2013 kidlg
+    </div>
+    <div style="display:none"></div>
